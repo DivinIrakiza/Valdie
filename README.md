@@ -74,6 +74,17 @@ import { isURL } from "valdie"
 console.log(isURL("https://github.com/Rwanda-Coding-Academy/Valdie")) // returns true
 ```
 
+### isPassword
+
+```javascript
+
+import { isPassword } from "valdie"
+import { PASSWORDS } from 'valdie/enums/EPasswords'
+
+console.log(isPassword("123", PASSWORDS.STRONG)) // returns false
+console.log(isPassword("Val#123ie", PASSWORDS.STRONG)) // returns true
+```
+
 ## For contributors
  Doors are open for any kind of contribution PRs and Issues, before submittin your PR or Issue it is advised to take a look in our [CONTRIBUTOR_COVENANT](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTOR_COVENANT.md) and  [CONTRIBUTING_PRACTICES](https://github.com/Rwanda-Coding-Academy/Valdie/blob/main/CONTRIBUTING.md)
 

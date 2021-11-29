@@ -1,3 +1,9 @@
+/**
+ * 
+ * @param str Password to be validated
+ * @returns 
+ */
+
 export default function PasswordScore(str: string): number {
   let score = 0
   if (!str) {

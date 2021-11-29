@@ -15,7 +15,10 @@ export function isPassword(
   switch (type) {
     case PASSWORDS.TOO_WEAK:
       if (PasswordScore(str) <= PASSWORD_SCORE[0])
-        ErrorMessage(str, `${PASSWORDS[PASSWORDS.TOO_WEAK].toString()} password`)
+        ErrorMessage(
+          str,
+          `${PASSWORDS[PASSWORDS.TOO_WEAK].toString()} password`
+        )
       break
 
     case PASSWORDS.WEAK:
@@ -35,7 +38,10 @@ export function isPassword(
 
     case PASSWORDS.VERY_STRONG:
       if (PasswordScore(str) <= PASSWORD_SCORE[4])
-        ErrorMessage(str, `${PASSWORDS[PASSWORDS.VERY_STRONG].toString()} password`)
+        ErrorMessage(
+          str,
+          `${PASSWORDS[PASSWORDS.VERY_STRONG].toString()} password`
+        )
       break
 
     default:
